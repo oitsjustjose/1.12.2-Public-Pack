@@ -1,0 +1,108 @@
+{
+  "images": {
+    "avatar": {
+      "image": "mainmenu:logo.png",
+      "posX": -72,
+      "posY": -72,
+      "width": 64,
+      "height": 64,
+      "alignment": "bottom_right"
+    },
+
+    "title": {
+      "image": "mainmenu:title.png",
+      "posX": -137,
+      "posY": 32,
+      "width": 264,
+      "height": 42,
+      "alignment": "top_center"
+    }
+  },
+
+  "buttons": {
+    "singleplayer": {
+      "text": "Play Alone",
+      "posX": -100,
+      "posY": 48,
+      "width": 200,
+      "height": 20,
+      "texture": "mainmenu:button.png",
+      "hoverTextColor": 4428177,
+      "action": {
+        "type": "openGui",
+        "gui": "singleplayer"
+      }
+    },
+
+    "multiplayer": {
+      "text": "Join the Server",
+      "posX": -100,
+      "posY": 72,
+      "width": 200,
+      "height": 20,
+      "texture": "mainmenu:button.png",
+      "hoverTextColor": 4428177,
+      "action": {
+        "type": "connectToServer",
+        "ip": "forgeserv.net"
+      }
+    },
+
+    "mods": {
+      "text": "Mod Options",
+      "posX": -100,
+      "posY": 96,
+      "width": 200,
+      "height": 20,
+      "texture": "mainmenu:button.png",
+      "hoverTextColor": 4428177,
+      "action": {
+        "type": "openGui",
+        "gui": "mods"
+      }
+    },
+
+    "options": {
+      "text": "Game Options",
+      "posX": -100,
+      "posY": 132,
+      "width": 98,
+      "height": 20,
+      "texture": "mainmenu:button.png",
+      "hoverTextColor": 4428177,
+      "action": {
+        "type": "openGui",
+        "gui": "options"
+      }
+    },
+
+    "quit": {
+      "text": "Exit",
+      "posX": 2,
+      "posY": 132,
+      "width": 98,
+      "height": 20,
+      "texture": "mainmenu:button.png",
+      "hoverTextColor": 4428177,
+      "action": {
+        "type": "quit"
+      }
+    }
+  },
+
+  "other": {
+    "splash-text": {
+      "posX": 90,
+      "posY": 70,
+      "color": 11833005,
+      "alignment": "top_center"
+    },
+    "panorama": {
+      "images": "mainmenu:background/panorama_%c.png",
+      "animate": true,
+      "animationSpeed": 1,
+      "blur": true,
+      "gradient": true
+    }
+  }
+}

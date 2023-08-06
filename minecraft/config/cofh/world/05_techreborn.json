@@ -1,0 +1,166 @@
+{
+  "dependencies": "thermalfoundation",
+  "populate": {
+    "pyrite": {
+      "enabled": true,
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "techreborn:ore",
+          "properties": {
+            "type": "pyrite"
+          }
+        },
+        "material": "minecraft:netherrack",
+        "cluster-size": 6
+      },
+      "cluster-count": 3,
+      "min-height": 10,
+      "max-height": 126,
+      "retrogen": false,
+      "biome": "all",
+      "dimension": {
+        "restriction": "whitelist",
+        "value": [-1]
+      }
+    },
+    "sphalerite": {
+      "enabled": true,
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "techreborn:ore",
+          "properties": {
+            "type": "sphalerite"
+          }
+        },
+        "material": "minecraft:netherrack",
+        "cluster-size": 6
+      },
+      "cluster-count": 3,
+      "min-height": 10,
+      "max-height": 126,
+      "retrogen": false,
+      "biome": "all",
+      "dimension": {
+        "restriction": "whitelist",
+        "value": [-1]
+      }
+    },
+    "tungsten": {
+      "enabled": true,
+      "distribution": "gaussian",
+      "generator": {
+        "block": {
+          "name": "techreborn:ore",
+          "properties": {
+            "type": "tungsten"
+          }
+        },
+        "material": "minecraft:end_stone",
+        "cluster-size": 6
+      },
+      "cluster-count": 3,
+      "center-height": 70,
+      "spread": 14,
+      "retrogen": false,
+      "biome": "all",
+      "dimension": {
+        "restriction": "whitelist",
+        "value": [1]
+      }
+    },
+    "sodalite": {
+      "enabled": true,
+      "distribution": "gaussian",
+      "generator": {
+        "block": {
+          "name": "techreborn:ore",
+          "properties": {
+            "type": "sodalite"
+          }
+        },
+        "material": "minecraft:end_stone",
+        "cluster-size": 6
+      },
+      "cluster-count": 3,
+      "center-height": 70,
+      "spread": 14,
+      "retrogen": false,
+      "biome": "all",
+      "dimension": {
+        "restriction": "whitelist",
+        "value": [1]
+      }
+    },
+    "peridot": {
+      "enabled": true,
+      "distribution": "gaussian",
+      "generator": {
+        "block": {
+          "name": "techreborn:ore",
+          "properties": {
+            "type": "peridot"
+          }
+        },
+        "material": "minecraft:end_stone",
+        "cluster-size": 6
+      },
+      "cluster-count": 3,
+      "center-height": 70,
+      "spread": 14,
+      "retrogen": false,
+      "biome": "all",
+      "dimension": {
+        "restriction": "whitelist",
+        "value": [1]
+      }
+    },
+    "ruby": {
+      "enabled": true,
+      "distribution": "gaussian",
+      "generator": {
+        "block": {
+          "name": "techreborn:ore",
+          "properties": {
+            "type": "ruby"
+          }
+        },
+        "material": "minecraft:stone",
+        "cluster-size": 6
+      },
+      "cluster-count": 3,
+      "center-height": 35,
+      "spread": 14,
+      "retrogen": false,
+      "biome": "all",
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [-1, 1]
+      }
+    },
+    "sapphire": {
+      "enabled": true,
+      "distribution": "gaussian",
+      "generator": {
+        "block": {
+          "name": "techreborn:ore",
+          "properties": {
+            "type": "sapphire"
+          }
+        },
+        "material": "minecraft:stone",
+        "cluster-size": 6
+      },
+      "cluster-count": 3,
+      "center-height": 35,
+      "spread": 14,
+      "retrogen": false,
+      "biome": "all",
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [-1, 1]
+      }
+    }
+  }
+}

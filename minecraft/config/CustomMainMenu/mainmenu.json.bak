@@ -1,0 +1,112 @@
+{
+  "images": {
+    "cog": {
+      "image": "mainmenu:logo.png",
+      "posX": 4,
+      "posY": 4,
+      "width": 96,
+      "height": 96,
+      "alignment": "top_left"
+    },
+    "title": {
+      "image": "mainmenu:title.png",
+      "posX": -120,
+      "posY": 30,
+      "width": 264,
+      "height": 42,
+      "alignment": "top_center"
+    }
+  },
+  "buttons": {
+    "singleplayer": {
+      "text": "Singleplayer",
+      "posX": 2,
+      "posY": 0,
+      "width": 100,
+      "height": 20,
+      "texture": "mainmenu:planks_big_oak.png",
+      "hoverTextColor": 52766,
+      "alignment": "left_center",
+      "action": {
+        "type": "openGui",
+        "gui": "singleplayer"
+      }
+    },
+    "multiplayer": {
+      "text": "Multiplayer",
+      "posX": 2,
+      "posY": 24,
+      "width": 100,
+      "height": 20,
+      "texture": "mainmenu:planks_big_oak.png",
+      "hoverTextColor": 52766,
+      "alignment": "left_center",
+      "action": {
+        "type": "openGui",
+        "gui": "multiplayer"
+      }
+    },
+    "mods": {
+      "text": "Mod Options",
+      "posX": 2,
+      "posY": 48,
+      "width": 100,
+      "height": 20,
+      "texture": "mainmenu:planks_big_oak.png",
+      "hoverTextColor": 52766,
+      "alignment": "left_center",
+      "action": {
+        "type": "openGui",
+        "gui": "mods"
+      }
+    },
+    "options": {
+      "text": "Game Options",
+      "posX": 2,
+      "posY": 72,
+      "width": 100,
+      "height": 20,
+      "texture": "mainmenu:planks_big_oak.png",
+      "hoverTextColor": 52766,
+      "alignment": "left_center",
+      "action": {
+        "type": "openGui",
+        "gui": "options"
+      }
+    },
+    "quit": {
+      "text": "Exit",
+      "posX": 2,
+      "posY": 96,
+      "width": 100,
+      "height": 20,
+      "texture": "mainmenu:planks_big_oak.png",
+      "hoverTextColor": 52766,
+      "alignment": "left_center",
+      "action": {
+        "type": "quit"
+      }
+    },
+    "refresh": {
+      "text": "",
+      "posX": -100,
+      "posY": 30,
+      "width": 256,
+      "height": 40,
+      "alignment": "top_center",
+      "texture": "mainmenu:blank.png",
+      "action": {
+        "type": "refresh"
+      }
+    }
+  },
+  "other": {
+    "panorama": {
+      "images": "mainmenu:background/panorama_%c.png",
+      "animate": true,
+      "animationSpeed": 1,
+      "blur": true,
+      "gradient": true
+    }
+  }
+}
