@@ -22,4 +22,8 @@ minecraft/resourcepacks/EclecticTrove*.zip
 minecraft/resourcepacks/Modernity*.zip
 minecraft/resourcepacks/Updated_Engineering*.zip
 minecraft/resourcepacks/witchery*.jar
+minecraft/config/jei/worldSettings.cfg
+minecraft/options.txt
+minecraft/servers.dat
+
 instance.cfg
