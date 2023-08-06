@@ -1,5 +1,3 @@
-# v2.0.1 Pending Changes
+# v2.0.2 Pending Changes
 
-- [ ] Update Mods
-- [ ] Remove IVToolkit, RecComp from Client
-- [ ] Update Voidpack
+- [ ] Remove Akashic Tome

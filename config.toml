@@ -1,3 +1,12 @@
 name = "oitsjustjose's Public Server Pack"
 author = "oitsjustjose"
-version = "1.12.2-2.0.0"
+version = "1.12.2-2.0.1"
+
+[[Resource]]
+name = "Greenery"
+filename = "Greenery-1.12.2-4.3.jar"
+action = "override"
+
+[[Resource]]
+filename = "witchery-1.7.10-0.24.1.jar"
+action = "ignore"

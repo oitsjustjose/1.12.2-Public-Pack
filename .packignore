@@ -1,3 +1,6 @@
+.git
+.gitignore
+curseforge_638134902114024296
 minecraft/.mixin.out
 minecraft/BotaniaVars.dat
 minecraft/asm
@@ -17,9 +20,11 @@ minecraft/patchouli_data.json
 minecraft/saves
 minecraft/screenshots
 minecraft/server-resource-packs
+minecraft/servers.dat
 minecraft/shaderpacks
 minecraft/structures
 minecraft/texturepacks
 minecraft/usercache.json
 minecraft/usernamecache.json
 natives
+todo.md

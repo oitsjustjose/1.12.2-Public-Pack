@@ -10,7 +10,9 @@
 ### Updated:
 
 - Voidpack to include a few more textures
--
+- Added Root's Old Root & Botania's Pasture Seed as drops for Greenery's Grasses
+- Disabled recipe for Akashic Tome because of a conflict with Better Combat.
+  - Next update I'll be removing this item so please remove all books from your tomes by selecting the book and pressing Shift (Sneak) + Q (Throw)
 
 ## v2.0.0
 
