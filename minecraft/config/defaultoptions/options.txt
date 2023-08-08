@@ -1,3 +1,4 @@
-mipmapLevels:0
+version:1343
 resourcePacks:["EclecticTrove-noconfig-1.16.5-1.2.0.zip","Updated_Engineering_1.12.2_edition.zip","Modernity-format3-v3.9.0.zip","Voidpack 4.0.zip"]
 incompatibleResourcePacks:["EclecticTrove-noconfig-1.16.5-1.2.0.zip"]
+mipmapLevels:0

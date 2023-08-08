@@ -45,7 +45,11 @@ recipes.addShapeless(<actuallyadditions:item_knife>, [<ore:stickWood>, <actually
 
 # Angel Ring Re-balance
 recipes.removeShaped(<extrautils2:angelring:*>);
-recipes.addShaped(<extrautils2:angelring>, [[<extrautils2:opinium:3>, <minecraft:elytra>, <extrautils2:opinium:3>], [<actuallyadditions:item_misc:15>, <actuallyadditions:item_misc:6>, <actuallyadditions:item_misc:15>], [<minecraft:stick>, <actuallyadditions:block_shock_suppressor>, <minecraft:stick>]]);
+recipes.addShaped(<extrautils2:angelring>, [
+    [<extrautils2:opinium:8>, <minecraft:elytra>, <extrautils2:opinium:8>],
+    [<thaumadditions:seal_symbol>.withTag({Aspect: "volatus"}), <thaumcraft:cloud_ring>, <thaumadditions:seal_symbol>.withTag({Aspect: "volatus"})],
+    [<thaumadditions:mithminite_ingot>, <thaumcraft:primordial_pearl>, <thaumadditions:mithminite_ingot>]
+]);
 recipes.addShapeless(<extrautils2:angelring:0>, [<extrautils2:angelring:*>, <ore:blockGlass>, <ore:blockGlass>]);
 recipes.addShapeless(<extrautils2:angelring:1>, [<extrautils2:angelring:*>, <minecraft:feather>, <minecraft:feather>]);
 recipes.addShapeless(<extrautils2:angelring:2>, [<extrautils2:angelring:*>, <ore:dyePink>, <ore:dyePink>]);
@@ -90,7 +94,7 @@ recipes.addShaped(<immersiveengineering:metal_device1:13>, [[<ore:blockGlassHard
 <ore:gemAll>.add(<techreborn:gem:4>);
 
 #Tweak to Witchery ; all credit to Lenvill
-val demon =  <entity:witchery:demon>;
+val demon = <entity:witchery:demon>;
 demon.addDrop(<witchery:demon_heart> % 50);
 
 # Add Roots stuff to vanilla seeds because of greenery
@@ -99,3 +103,19 @@ vanilla.seeds.addSeed(<botania:grassseeds:0> % 1);
 
 # Remove the Akashic Tome recipe for now
 recipes.remove(<akashictome:tome>);
+
+# Make Smooth Stone craftable like 1.14+, bump PJR a step behind
+furnace.remove(<projectred-core:resource_item>);
+furnace.addRecipe(<projectred-core:resource_item:0> * 4, <subaquatic:smooth_stone>);
+furnace.addRecipe(<subaquatic:smooth_stone>, <minecraft:stone>);
+
+# Remove redundant bronze gear
+recipes.remove(<techreborn:bronzeboots>);
+recipes.remove(<techreborn:bronzeleggings>);
+recipes.remove(<techreborn:bronzechestplate>);
+recipes.remove(<techreborn:bronzehelmet>);
+recipes.remove(<techreborn:bronzehoe>);
+recipes.remove(<techreborn:bronzeaxe>);
+recipes.remove(<techreborn:bronzespade>);
+recipes.remove(<techreborn:bronzepickaxe>);
+recipes.remove(<techreborn:bronzesword>);
