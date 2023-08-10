@@ -2,7 +2,7 @@
   "dependencies": "thermalfoundation",
   "populate": {
     "redstone_clathrate": {
-      "enabled": "true",
+      "enabled": true,
       "distribution": "uniform",
       "generator": {
         "block": [
@@ -33,7 +33,7 @@
       }
     },
     "glowstone_clathrate": {
-      "enabled": "true",
+      "enabled": true,
       "distribution": "uniform",
       "generator": {
         "block": [
@@ -69,7 +69,7 @@
       "dimension": "all"
     },
     "ender_clathrate": {
-      "enabled": "true",
+      "enabled": true,
       "distribution": "uniform",
       "generator": {
         "block": {

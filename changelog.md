@@ -1,5 +1,54 @@
 # Server Pack v2 Changelog
 
+## v2.0.3
+
+### Added:
+
+- ClaimIt (a chunk claiming system)
+  - Using a Wooden Wrench (the one from Chisels n Bits), you can claim an area that only you can build in. ClaimIt also has commands so you can add teammates.
+- Culinary Construct
+- FoamFix, VanillaFix, TexFix (all replacements for VintageFix, but less hacky)
+- MrCrayFish's Furniture Mod (many recipes like dishwashing have been removed)
+
+### Updated:
+
+- FluidLogging API
+
+### Changed:
+
+- Reinstated Akashic Tome Recipe
+
+### Fixed:
+
+- Removed the duplicate Hunger & Saturation Tooltips on foods
+- Added every single book class (I may have missed some, let me know if I did) to the Immersive Combat blacklist so that the Akashic Tome can work as expected again
+- Electroblob's Wizardry's Crystal Ore not generating
+-
+
+### Removed:
+
+- Roots Classic
+
+  Repeated debugging and repros later and we've determined that it causes not only rampant memory leaks when wearing any of the mod's armors, but also incredibly poor FPS when another player is in rendering range & within the camera's frustum. TL;DR: player renderer borked
+
+- VintageFix
+
+  Caused significantly more issues than it resolved - you'll notice that startup times will be longer now, but you won't have severe lag spikes as you play and you'll see _significantly_ fewer broken textures. Also lets me get rid of LoliASM which is good because the fewer hacky mods, the better
+
+## v2.0.2
+
+### Installed:
+
+- Bibliocraft
+- Nether Portal Fix
+- Metal Chests
+- Nether Chest
+- More Overlays
+
+### Removed:
+
+- TorchOptimizer (redundant with More Overlays)
+
 ## v2.0.1
 
 ### Removed:

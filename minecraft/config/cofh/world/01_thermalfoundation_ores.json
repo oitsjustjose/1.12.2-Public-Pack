@@ -2,7 +2,7 @@
   "dependencies": "thermalfoundation",
   "populate": {
     "copper": {
-      "enabled": "true",
+      "enabled": true,
       "distribution": "uniform",
       "generator": {
         "block": {
@@ -25,7 +25,7 @@
       }
     },
     "tin": {
-      "enabled": "true",
+      "enabled": true,
       "distribution": "uniform",
       "generator": {
         "block": {
@@ -48,7 +48,7 @@
       }
     },
     "silver": {
-      "enabled": "true",
+      "enabled": true,
       "distribution": "uniform",
       "generator": {
         "block": [
@@ -81,7 +81,7 @@
       }
     },
     "lead": {
-      "enabled": "true",
+      "enabled": true,
       "distribution": "uniform",
       "generator": {
         "block": [
@@ -114,7 +114,7 @@
       }
     },
     "nickel": {
-      "enabled": "true",
+      "enabled": true,
       "distribution": "uniform",
       "generator": {
         "block": {
@@ -137,7 +137,7 @@
       }
     },
     "platinum": {
-      "enabled": "true",
+      "enabled": true,
       "distribution": "uniform",
       "generator": {
         "block": [
@@ -170,7 +170,7 @@
       }
     },
     "aluminum": {
-      "enabled": "true",
+      "enabled": true,
       "distribution": "uniform",
       "generator": {
         "block": {
@@ -193,7 +193,7 @@
       }
     },
     "iridium": {
-      "enabled": "true",
+      "enabled": true,
       "distribution": "uniform",
       "generator": {
         "block": [
@@ -226,7 +226,7 @@
       }
     },
     "copper_ocean": {
-      "enabled": "true",
+      "enabled": true,
       "distribution": "uniform",
       "generator": {
         "block": {
@@ -257,7 +257,7 @@
       }
     },
     "copper_high": {
-      "enabled": "true",
+      "enabled": true,
       "distribution": "uniform",
       "generator": {
         "block": {

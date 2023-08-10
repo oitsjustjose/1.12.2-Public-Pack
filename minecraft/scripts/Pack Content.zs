@@ -97,12 +97,8 @@ recipes.addShaped(<immersiveengineering:metal_device1:13>, [[<ore:blockGlassHard
 val demon = <entity:witchery:demon>;
 demon.addDrop(<witchery:demon_heart> % 50);
 
-# Add Roots stuff to vanilla seeds because of greenery
-vanilla.seeds.addSeed(<rootsclassic:oldroot> % 1);
+# Add Botania's Grass Seeds to grass drops
 vanilla.seeds.addSeed(<botania:grassseeds:0> % 1);
-
-# Remove the Akashic Tome recipe for now
-recipes.remove(<akashictome:tome>);
 
 # Make Smooth Stone craftable like 1.14+, bump PJR a step behind
 furnace.remove(<projectred-core:resource_item>);
