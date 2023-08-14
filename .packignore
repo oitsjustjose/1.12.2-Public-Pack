@@ -8,6 +8,7 @@ minecraft/assetmover
 minecraft/astralsorcery
 minecraft/coremods
 minecraft/crafttweaker.log
+minecraft/hc_options.txt
 minecraft/icon.png
 minecraft/knownkeys.txt
 minecraft/llibrary
@@ -24,7 +25,9 @@ minecraft/servers.dat
 minecraft/shaderpacks
 minecraft/structures
 minecraft/texturepacks
+minecraft/tv-cache
 minecraft/usercache.json
 minecraft/usernamecache.json
 natives
+readme.md
 todo.md
