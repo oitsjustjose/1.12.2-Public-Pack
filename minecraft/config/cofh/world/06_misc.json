@@ -91,7 +91,7 @@
         ]
       }
     },
-    "ebwizardry:crystal_ore": {
+    "crystal_ore": {
       "enabled": true,
       "distribution": "uniform",
       "generator": {
@@ -104,11 +104,35 @@
       "cluster-count": 6,
       "min-height": 8,
       "max-height": 42,
-      "retrogen": false,
+      "retrogen": true,
       "biome": "all",
       "dimension": {
         "restriction": "blacklist",
         "value": [-1, 1]
+      }
+    },
+    "devoritium_ore": {
+      "enabled": true,
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "ancientspellcraft:devoritium_ore"
+        },
+        "material": "minecraft:stone",
+        "cluster-size": 2
+      },
+      "cluster-count": 2,
+      "min-height": 2,
+      "max-height": 8,
+      "retrogen": true,
+      "biome": {
+        "restriction": "whitelist",
+        "value": [
+          {
+            "type": "id",
+            "value": "thaumcraft:magical_forest"
+          }
+        ]
       }
     }
   }
