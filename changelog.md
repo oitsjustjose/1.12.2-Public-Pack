@@ -1,5 +1,21 @@
 # Server Pack v2 Changelog
 
+## v2.0.5
+
+### Added:
+
+- Colytra
+- Cosmetic Armor
+- Enchantment Descriptions
+- Extreme Reactors (with modified recipes & textures)
+
+### Changed:
+
+- Swapped out FoamFix + TexFix + VanillaFix for VintageFix again but with better configuration to avoid prior complaints
+  - This was due to a recurring crash seen with Witchery Resurrected and villages, better safe than sorry
+- Bibliocraft Bookcases can no longer store EBW books - apparently books stacking caused a small crash that would make stairs/rotatables always face North or South...
+- EBW Bookshelves are much cheaper now, costing 6 Gilded Planks and the corresponding Bibliocraft Bookcase
+
 ## v2.0.4
 
 ### Changed:

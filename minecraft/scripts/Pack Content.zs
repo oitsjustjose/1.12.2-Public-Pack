@@ -115,3 +115,93 @@ recipes.remove(<techreborn:bronzeaxe>);
 recipes.remove(<techreborn:bronzespade>);
 recipes.remove(<techreborn:bronzepickaxe>);
 recipes.remove(<techreborn:bronzesword>);
+
+# Make the EBW shelves much more cheap
+recipes.remove(<ebwizardry:oak_bookshelf>);
+recipes.remove(<ebwizardry:spruce_bookshelf>);
+recipes.remove(<ebwizardry:birch_bookshelf>);
+recipes.remove(<ebwizardry:jungle_bookshelf>);
+recipes.remove(<ebwizardry:acacia_bookshelf>);
+recipes.remove(<ebwizardry:dark_oak_bookshelf>);
+
+recipes.addShaped(<ebwizardry:oak_bookshelf>, [
+    [<ebwizardry:gilded_wood:0>, <ebwizardry:gilded_wood:0>, <ebwizardry:gilded_wood:0>],
+    [null,                       <bibliocraft:bookcase:0>,   null                      ],
+    [<ebwizardry:gilded_wood:0>, <ebwizardry:gilded_wood:0>, <ebwizardry:gilded_wood:0>]
+]);
+
+recipes.addShaped(<ebwizardry:spruce_bookshelf>, [
+    [<ebwizardry:gilded_wood:1>, <ebwizardry:gilded_wood:1>, <ebwizardry:gilded_wood:1>],
+    [null,                       <bibliocraft:bookcase:1>,   null                      ],
+    [<ebwizardry:gilded_wood:1>, <ebwizardry:gilded_wood:1>, <ebwizardry:gilded_wood:1>]
+]);
+
+recipes.addShaped(<ebwizardry:birch_bookshelf>, [
+    [<ebwizardry:gilded_wood:2>, <ebwizardry:gilded_wood:2>, <ebwizardry:gilded_wood:2>],
+    [null,                       <bibliocraft:bookcase:2>,   null                      ],
+    [<ebwizardry:gilded_wood:2>, <ebwizardry:gilded_wood:2>, <ebwizardry:gilded_wood:2>]
+]);
+
+recipes.addShaped(<ebwizardry:jungle_bookshelf>, [
+    [<ebwizardry:gilded_wood:3>, <ebwizardry:gilded_wood:3>, <ebwizardry:gilded_wood:3>],
+    [null,                       <bibliocraft:bookcase:3>,   null                      ],
+    [<ebwizardry:gilded_wood:3>, <ebwizardry:gilded_wood:3>, <ebwizardry:gilded_wood:3>]
+]);
+
+recipes.addShaped(<ebwizardry:acacia_bookshelf>, [
+    [<ebwizardry:gilded_wood:4>, <ebwizardry:gilded_wood:4>, <ebwizardry:gilded_wood:4>],
+    [null,                       <bibliocraft:bookcase:4>,   null                      ],
+    [<ebwizardry:gilded_wood:4>, <ebwizardry:gilded_wood:4>, <ebwizardry:gilded_wood:4>]
+]);
+
+recipes.addShaped(<ebwizardry:dark_oak_bookshelf>, [
+    [<ebwizardry:gilded_wood:5>, <ebwizardry:gilded_wood:5>, <ebwizardry:gilded_wood:5>],
+    [null,                       <bibliocraft:bookcase:5>,   null                      ],
+    [<ebwizardry:gilded_wood:5>, <ebwizardry:gilded_wood:5>, <ebwizardry:gilded_wood:5>]
+]);
+
+#########################################################
+#                    Extreme Reactors                   #
+#########################################################
+
+/* Oredict removals */
+<ore:blockBlutonium>.remove(<bigreactors:blockblutonium>);
+<ore:blockCyanite>.remove(<bigreactors:blockcyanite>);
+<ore:blockGraphite>.remove(<bigreactors:blockgraphite>);
+<ore:blockYellorium>.remove(<bigreactors:blockyellorium>);
+<ore:dustBlutonium>.remove(<bigreactors:dustblutonium>);
+<ore:dustCyanite>.remove(<bigreactors:dustcyanite>);
+<ore:dustGraphite>.remove(<bigreactors:dustgraphite>);
+<ore:ingotBlutonium>.remove(<bigreactors:ingotblutonium>);
+<ore:ingotCyanite>.remove(<bigreactors:ingotcyanite>);
+<ore:ingotGraphite>.remove(<bigreactors:ingotgraphite>);
+<ore:ingotPlutonium>.remove(<bigreactors:ingotblutonium>);
+<ore:ingotUranium>.remove(<bigreactors:ingotyellorium>);
+<ore:ingotYellorium>.remove(<bigreactors:ingotyellorium>);
+<ore:oreAnglesite>.remove(<bigreactors:oreanglesite>);
+<ore:oreBenitoite>.remove(<bigreactors:orebenitoite>);
+<ore:oreYellorite>.remove(<bigreactors:oreyellorite>);
+<ore:oreYellorium>.remove(<bigreactors:oreyellorite>);
+
+recipes.replaceAllOccurences(<bigreactors:ingotblutonium>, <techreborn:ingot:25>);
+recipes.replaceAllOccurences(<bigreactors:dustblutonium>, <techreborn:dust:67>);
+/* Cyanite has a stupid recipe and is only used for a small number of recipes... */
+recipes.replaceAllOccurences(<bigreactors:ingotcyanite>, <techreborn:plates:38>);
+/* Use HOP Graphite for everything graphite is usually used for */
+recipes.replaceAllOccurences(<bigreactors:dustgraphite>, <immersiveengineering:material:18>);
+recipes.replaceAllOccurences(<bigreactors:ingotgraphite>, <immersiveengineering:material:19>);
+furnace.remove(<bigreactors:ingotgraphite>);
+
+/* Other stupid resources get nuked too */
+recipes.remove(<bigreactors:blockblutonium>);
+recipes.remove(<bigreactors:blockcyanite>);
+recipes.remove(<bigreactors:blockgraphite>);
+recipes.remove(<bigreactors:blockyellorium>);
+recipes.remove(<bigreactors:dustblutonium>);
+recipes.remove(<bigreactors:dustcyanite>);
+recipes.remove(<bigreactors:dustgraphite>);
+recipes.remove(<bigreactors:dustyellorium>);
+recipes.remove(<bigreactors:ingotblutonium>);
+recipes.remove(<bigreactors:ingotcyanite>);
+recipes.remove(<bigreactors:ingotgraphite>);
+recipes.remove(<bigreactors:ingotyellorium>);
