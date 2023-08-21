@@ -164,25 +164,6 @@ recipes.addShaped(<ebwizardry:dark_oak_bookshelf>, [
 #                    Extreme Reactors                   #
 #########################################################
 
-/* Oredict removals */
-<ore:blockBlutonium>.remove(<bigreactors:blockblutonium>);
-<ore:blockCyanite>.remove(<bigreactors:blockcyanite>);
-<ore:blockGraphite>.remove(<bigreactors:blockgraphite>);
-<ore:blockYellorium>.remove(<bigreactors:blockyellorium>);
-<ore:dustBlutonium>.remove(<bigreactors:dustblutonium>);
-<ore:dustCyanite>.remove(<bigreactors:dustcyanite>);
-<ore:dustGraphite>.remove(<bigreactors:dustgraphite>);
-<ore:ingotBlutonium>.remove(<bigreactors:ingotblutonium>);
-<ore:ingotCyanite>.remove(<bigreactors:ingotcyanite>);
-<ore:ingotGraphite>.remove(<bigreactors:ingotgraphite>);
-<ore:ingotPlutonium>.remove(<bigreactors:ingotblutonium>);
-<ore:ingotUranium>.remove(<bigreactors:ingotyellorium>);
-<ore:ingotYellorium>.remove(<bigreactors:ingotyellorium>);
-<ore:oreAnglesite>.remove(<bigreactors:oreanglesite>);
-<ore:oreBenitoite>.remove(<bigreactors:orebenitoite>);
-<ore:oreYellorite>.remove(<bigreactors:oreyellorite>);
-<ore:oreYellorium>.remove(<bigreactors:oreyellorite>);
-
 recipes.replaceAllOccurences(<bigreactors:ingotblutonium>, <techreborn:ingot:25>);
 recipes.replaceAllOccurences(<bigreactors:dustblutonium>, <techreborn:dust:67>);
 /* Cyanite has a stupid recipe and is only used for a small number of recipes... */
