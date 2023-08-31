@@ -1,4 +1,6 @@
 import mods.chisel.Carving;
+import mods.immersiveengineering.ArcFurnace;
+import mods.immersiveengineering.BlastFurnace;
 
 #########################################################
 #               Minor Tweaks & Fixes:                   #
@@ -27,6 +29,9 @@ recipes.addShaped(<rustic:iron_lattice> * 5, [[null, <minecraft:iron_bars>, null
 
 # A simple little recipe for ThermalDynamics! :)
 recipes.addShapeless(<thermaldynamics:duct_48>, [<thermaldynamics:cover:*>, <thermaldynamics:cover:*>, <thermaldynamics:cover:*>, <thermaldynamics:cover:*>, <thermaldynamics:cover:*>, <thermaldynamics:cover:*>]);
+
+# Let II rubber saplings be replaced by TechReborn's.
+recipes.replaceAllOccurences(<immersiveintelligence:rubber_sapling>, <ore:saplingRubber>);
 
 #########################################################
 #                Difficulty Adjustments:                #
@@ -173,7 +178,7 @@ recipes.replaceAllOccurences(<bigreactors:dustgraphite>, <immersiveengineering:m
 recipes.replaceAllOccurences(<bigreactors:ingotgraphite>, <immersiveengineering:material:19>);
 furnace.remove(<bigreactors:ingotgraphite>);
 
-/* Other stupid resources get nuked too */
+// /* Other stupid resources get nuked too */
 recipes.remove(<bigreactors:blockblutonium>);
 recipes.remove(<bigreactors:blockcyanite>);
 recipes.remove(<bigreactors:blockgraphite>);
@@ -186,3 +191,111 @@ recipes.remove(<bigreactors:ingotblutonium>);
 recipes.remove(<bigreactors:ingotcyanite>);
 recipes.remove(<bigreactors:ingotgraphite>);
 recipes.remove(<bigreactors:ingotyellorium>);
+
+// Axe Ore Dict Entries individually
+<ore:ingotBlutonium>.remove(<bigreactors:ingotblutonium>);
+<bigreactors:ingotcyanite>.remove(<bigreactors:ingotcyanite>);
+<ore:ingotGraphite>.remove(<bigreactors:ingotgraphite>);
+<ore:ingotPlutonium>.remove(<bigreactors:ingotblutonium>);
+<ore:ingotSteel>.remove(<bigreactors:ingotsteel>);
+<ore:ingotUranium>.remove(<bigreactors:ingotyellorium>);
+<ore:ingotYellorium>.remove(<bigreactors:ingotyellorium>);
+<ore:oreYellorite>.remove(<bigreactors:oreyellorite>);
+<ore:oreYellorium>.remove(<bigreactors:oreyellorite>);
+
+<ore:dustBlutonium>.remove(<bigreactors:dustblutonium>);
+<ore:dustCyanite>.remove(<bigreactors:dustcyanite>);
+<ore:dustGraphite>.remove(<bigreactors:dustgraphite>);
+<ore:dustPlutonium>.remove(<bigreactors:dustblutonium>);
+<ore:dustSteel>.remove(<bigreactors:duststeel>);
+<ore:dustUranium>.remove(<bigreactors:dustyellorium>);
+<ore:dustYellorium>.remove(<bigreactors:dustyellorium>);
+
+// Furnace recipes, gone
+furnace.remove(<bigreactors:ingotblutonium>);
+furnace.remove(<bigreactors:ingotcyanite>);
+furnace.remove(<bigreactors:ingotgraphite>);
+furnace.remove(<bigreactors:ingotyellorium>);
+
+// For some reason IE thinks this recipe should exist??
+ArcFurnace.removeRecipe(<bigreactors:ingotblutonium>);
+// But then nothing lets you make Plutonium Ingots, so let's fix that too
+ArcFurnace.addRecipe(<techreborn:ingot:25>, <techreborn:dust:67>, <immersiveengineering:material:7>, 5000, 2048);
+BlastFurnace.addRecipe(<techreborn:ingot:25>, <techreborn:dust:67>, 10000, <immersiveengineering:material:7>);
+
+// Now, for some reason, a bunch of recipes have broken by here. Probably an oreDict thing??
+recipes.addShaped(<bigreactors:reactorcasingcores>, [
+    [<ore:ingotSteel>, <ore:ingotHOPGraphite>, <ore:ingotSteel>],
+    [<ore:ingotGold>, <ore:dustRedstone>, <ore:ingotGold>],
+    [<ore:ingotSteel>, <ore:ingotHOPGraphite>, <ore:ingotSteel>]
+]);
+
+recipes.addShaped(<bigreactors:reactorcasing>, [
+    [<ore:ingotSteel>, <ore:ingotHOPGraphite>, <ore:ingotSteel>],
+    [<ore:ingotHOPGraphite>, <bigreactors:reactorcasingcores>, <ore:ingotHOPGraphite>],
+    [<ore:ingotSteel>, <ore:ingotHOPGraphite>, <ore:ingotSteel>]
+]);
+
+recipes.addShaped(<bigreactors:reactorcontrolrod>, [
+    [<bigreactors:reactorcasing>, <minecraft:piston>, <bigreactors:reactorcasing>],
+    [<ore:ingotHOPGraphite>, <ore:dustRedstone>, <ore:ingotHOPGraphite>],
+    [<bigreactors:reactorcasing>, <ore:ingotUranium>, <bigreactors:reactorcasing>]
+]);
+
+recipes.addShaped(<bigreactors:reactorfuelrod>, [
+    [<ore:ingotSteel>, <ore:ingotHOPGraphite>, <ore:ingotSteel>],
+    [<ore:blockGlassHardened>, <ore:ingotUranium>, <ore:blockGlassHardened>],
+    [<ore:ingotSteel>, <ore:ingotHOPGraphite>, <ore:ingotSteel>]
+]);
+
+recipes.addShaped(<bigreactors:turbinehousing>, [
+    [<ore:ingotSteel>, <ore:ingotHOPGraphite>, <ore:ingotSteel>],
+    [<ore:ingotHOPGraphite>, <bigreactors:turbinehousingcores>, <ore:ingotHOPGraphite>],
+    [<ore:ingotSteel>, <ore:ingotHOPGraphite>, <ore:ingotSteel>]
+]);
+
+recipes.addShaped(<bigreactors:turbinehousingcores>, [
+    [<ore:ingotSteel>, <ore:ingotHOPGraphite>, <ore:ingotSteel>],
+    [<ore:ingotGold>, <minecraft:comparator>, <ore:ingotGold>],
+    [<ore:ingotSteel>, <ore:ingotHOPGraphite>, <ore:ingotSteel>]
+]);
+
+recipes.addShaped(<bigreactors:turbinerotorblade>, [
+    [<bigreactors:ingotcyanite>, <ore:ingotSteel>, <ore:ingotSteel>]
+]);
+
+recipes.addShaped(<bigreactors:turbinerotorshaft>, [
+    [null, <ore:ingotSteel>, null],
+    [<ore:ingotSteel>, <bigreactors:ingotcyanite>, <ore:ingotSteel>],
+    [null, <ore:ingotSteel>, null]
+]);
+
+#########################################################
+#                        Greenery                       #
+#########################################################
+recipes.addShapeless(<minecraft:tallgrass:1>, [<greenery:plant/upland/tall/ryegrass>]);
+recipes.addShapeless(<minecraft:tallgrass:1>, [<greenery:plant/upland/tall/foxtail>]);
+recipes.addShapeless(<minecraft:tallgrass:1>, [<greenery:plant/upland/tall/barley>]);
+recipes.addShapeless(<minecraft:tallgrass:2>, [<greenery:plant/upland/tall/eagle_fern>]);
+
+#########################################################
+#                         Shears                        #
+#########################################################
+<botania:elementiumshears>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));
+<botania:manasteelshears>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));
+<enderio:item_dark_steel_shears>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));
+<thermalfoundation:tool.shears_aluminum>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));
+<thermalfoundation:tool.shears_bronze>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));
+<thermalfoundation:tool.shears_constantan>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));
+<thermalfoundation:tool.shears_copper>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));
+<thermalfoundation:tool.shears_diamond>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));
+<thermalfoundation:tool.shears_electrum>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));
+<thermalfoundation:tool.shears_gold>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));
+<thermalfoundation:tool.shears_invar>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));
+<thermalfoundation:tool.shears_lead>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));
+<thermalfoundation:tool.shears_nickel>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));
+<thermalfoundation:tool.shears_platinum>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));
+<thermalfoundation:tool.shears_silver>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));
+<thermalfoundation:tool.shears_steel>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));
+<thermalfoundation:tool.shears_tin>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));
+<witchery:boline>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));

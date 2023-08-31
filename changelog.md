@@ -1,5 +1,32 @@
 # Server Pack v2 Changelog
 
+## v2.0.6
+
+### Added:
+
+#### Mods:
+
+- Bad Wither No Cookie
+- Simply Jetpacks
+- Sound Mufflers (The OG version of Extreme Sound Mufflers)
+- WiZoom
+
+#### Other:
+
+- Recipes to convert Greenery Grasses into Ferns and Tall Grass respectively
+- Tooltips on all non-vanilla Shears indicating they won't work on Greenery Grasses ☹️
+
+### Changed:
+
+- Colytra weren't respecting enchantments like they do in modern versions, so your attached elytra will now deduct durability from your chestplate (I don't believe it'll break the chestplate though)
+- Telepads can now have their coordinates and dimensions changed directly within the UI (this was a server change I made a while ago, but now propagating it into the main client pack as well)
+
+### Fixed:
+
+- Botania Lexicon not working properly in the Akashic Tome
+- /dank/nulls getting into weird broken states where they flicker constantly as if they're being punched once per tick
+- Fixed any cases where Immersive Intelligence's Rubber Saplings were _required_ (they'll now take TechReborn's 🙂)
+
 ## v2.0.5
 
 ### Added:
