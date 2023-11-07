@@ -1,6 +1,7 @@
 .git
 .gitignore
 curseforge_638134902114024296
+minecraft/.ReAuth.cfg
 minecraft/.mixin.out
 minecraft/BotaniaVars.dat
 minecraft/asm

@@ -24,7 +24,7 @@ recipes.addShapeless(<quark:lit_lamp>, [<minecraft:lever>, <minecraft:redstone_l
 recipes.addShapeless(<minecraft:redstone_lamp>, [<minecraft:lever>, <quark:lit_lamp>]);
 
 # Fix Thermal Foundation iron gear recipe conflict:
-recipes.removeShaped(<rustic:iron_lattice>);
+recipes.remove(<rustic:iron_lattice>);
 recipes.addShaped(<rustic:iron_lattice> * 5, [[null, <minecraft:iron_bars>, null], [<minecraft:iron_bars>, <minecraft:iron_bars>, <minecraft:iron_bars>], [null, <minecraft:iron_bars>, null]]);
 
 # A simple little recipe for ThermalDynamics! :)
@@ -32,6 +32,10 @@ recipes.addShapeless(<thermaldynamics:duct_48>, [<thermaldynamics:cover:*>, <the
 
 # Let II rubber saplings be replaced by TechReborn's.
 recipes.replaceAllOccurences(<immersiveintelligence:rubber_sapling>, <ore:saplingRubber>);
+
+# Cathedral's  stone column doesn't use bricks, conflicting with Speleothems
+recipes.remove(<cathedral:cathedral_pillar_various:0>);
+recipes.addShaped(<cathedral:cathedral_pillar_various:0>, [[<ore:brickStone>], [<ore:brickStone>], [<ore:brickStone>]]);
 
 #########################################################
 #                Difficulty Adjustments:                #
@@ -193,23 +197,23 @@ recipes.remove(<bigreactors:ingotgraphite>);
 recipes.remove(<bigreactors:ingotyellorium>);
 
 // Axe Ore Dict Entries individually
-<ore:ingotBlutonium>.remove(<bigreactors:ingotblutonium>);
-<bigreactors:ingotcyanite>.remove(<bigreactors:ingotcyanite>);
-<ore:ingotGraphite>.remove(<bigreactors:ingotgraphite>);
-<ore:ingotPlutonium>.remove(<bigreactors:ingotblutonium>);
-<ore:ingotSteel>.remove(<bigreactors:ingotsteel>);
-<ore:ingotUranium>.remove(<bigreactors:ingotyellorium>);
-<ore:ingotYellorium>.remove(<bigreactors:ingotyellorium>);
-<ore:oreYellorite>.remove(<bigreactors:oreyellorite>);
-<ore:oreYellorium>.remove(<bigreactors:oreyellorite>);
+#<ore:ingotBlutonium>.remove(<bigreactors:ingotblutonium>);
+#<ore:ingotCyanite>.remove(<bigreactors:ingotcyanite>);
+#<ore:ingotGraphite>.remove(<bigreactors:ingotgraphite>);
+#<ore:ingotPlutonium>.remove(<bigreactors:ingotblutonium>);
+#<ore:ingotSteel>.remove(<bigreactors:ingotsteel>);
+#<ore:ingotUranium>.remove(<bigreactors:ingotyellorium>);
+#<ore:ingotYellorium>.remove(<bigreactors:ingotyellorium>);
+#<ore:oreYellorite>.remove(<bigreactors:oreyellorite>);
+#<ore:oreYellorium>.remove(<bigreactors:oreyellorite>);
 
-<ore:dustBlutonium>.remove(<bigreactors:dustblutonium>);
-<ore:dustCyanite>.remove(<bigreactors:dustcyanite>);
-<ore:dustGraphite>.remove(<bigreactors:dustgraphite>);
-<ore:dustPlutonium>.remove(<bigreactors:dustblutonium>);
-<ore:dustSteel>.remove(<bigreactors:duststeel>);
-<ore:dustUranium>.remove(<bigreactors:dustyellorium>);
-<ore:dustYellorium>.remove(<bigreactors:dustyellorium>);
+#<ore:dustBlutonium>.remove(<bigreactors:dustblutonium>);
+#<ore:dustCyanite>.remove(<bigreactors:dustcyanite>);
+#<ore:dustGraphite>.remove(<bigreactors:dustgraphite>);
+#<ore:dustPlutonium>.remove(<bigreactors:dustblutonium>);
+#<ore:dustSteel>.remove(<bigreactors:duststeel>);
+#<ore:dustUranium>.remove(<bigreactors:dustyellorium>);
+#<ore:dustYellorium>.remove(<bigreactors:dustyellorium>);
 
 // Furnace recipes, gone
 furnace.remove(<bigreactors:ingotblutonium>);
@@ -299,3 +303,7 @@ recipes.addShapeless(<minecraft:tallgrass:2>, [<greenery:plant/upland/tall/eagle
 <thermalfoundation:tool.shears_steel>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));
 <thermalfoundation:tool.shears_tin>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));
 <witchery:boline>.addTooltip(format.darkRed("Do not work on Greenery Grasses"));
+
+# Fix Immersive Intelligence's ores not smelting right (they're mapped to the wrong outputs)
+<ore:orePlatinum>.remove(<immersiveintelligence:ore:0>);
+<ore:oreZinc>.remove(<immersiveintelligence:ore:1>);

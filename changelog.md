@@ -1,5 +1,40 @@
 # Server Pack v2 Changelog
 
+## v2.0.7:
+
+### Added:
+
+- Re-Auth (with cute button in the main menu)
+- Delightful Cuisine for Woodheads
+- RSInfiniteWireless
+
+### Fixed:
+
+- Zinc and Platinum from Immersive Intelligence being in the Ore Dictionary
+- RFTools Syringes not working
+
+### Updated:
+
+- Claimit API
+- Greenery
+- Lootr
+- Universal Tweaks
+- Vintage Fix
+
+### Changed:
+
+#### Mods:
+
+- **Refined Storage**
+  - MoreRefinedStorage is a backport of modern Refined Storage features including the Wireless Crafting Terminal, Shift+Scroll item movement and more.
+  - Reborn Storage has been replaced with a custom build of Reborn Storage just for MRS
+  - Refined Storage Addons has been removed because its content is now redundant with the backport of modern RS features - If you need a refund for anything, hit me up
+
+#### Other:
+
+- The start screen now has a new color palette to better match the website
+- TechReborn Manual Refund
+
 ## v2.0.6
 
 ### Added:
