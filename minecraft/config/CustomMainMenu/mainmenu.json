@@ -48,6 +48,19 @@
       }
     },
 
+    "oauth": {
+      "text": " ",
+      "tooltip": "Re-Auth",
+      "posX": -124,
+      "posY": 132,
+      "width": 20,
+      "height": 20,
+      "imageWidth": 16,
+      "imageHeight": 16,
+      "texture": "mainmenu:re-auth.png",
+      "wrappedButton": 17325
+    },
+
     "mods": {
       "text": "Mod Options",
       "posX": -100,
@@ -86,6 +99,19 @@
       "hoverTextColor": 4428177,
       "action": {
         "type": "quit"
+      }
+    },
+
+    "refresh": {
+      "text": " ",
+      "posX": -137,
+      "posY": 32,
+      "width": 264,
+      "height": 42,
+      "alignment": "top_center",
+      "texture": "mainmenu:blank.png",
+      "action": {
+        "type": "refresh"
       }
     }
   },
