@@ -4,5 +4,5 @@ version = "1.12.2-2.0.7"
 
 [[Resource]]
 name = "Greenery"
-filename = "Greenery-1.12.2-4.3.jar"
+filename = "Greenery-1.12.2-4.5.jar"
 action = "override"
