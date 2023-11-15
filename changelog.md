@@ -1,5 +1,17 @@
 # Server Pack v2 Changelog
 
+## v2.0.8:
+
+### Added:
+
+- DrawerFPS
+- DynamicDynamos
+- DynamicSurroundings
+- Engineer's Decor
+- Gendustry
+- [RP] 1.14+ Engineer's Decor Textures
+- [RP] Better Gendustry
+
 ## v2.0.7:
 
 ### Added:
