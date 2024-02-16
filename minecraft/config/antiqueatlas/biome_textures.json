@@ -5,6 +5,12 @@
     "fossil:lair of darkness": "PLAINS",
     "fossil:treasure": "PLAINS",
     "fossil:volcano": "DESERT",
+    "galacticraftcore:outer space": "PLAINS",
+    "galaxyspace:space": "PLAINS",
+    "galaxyspace:spacelowhills": "PLAINS",
+    "galaxyspace:spacelowplains": "PLAINS",
+    "galaxyspace:spacemidhills": "PLAINS",
+    "galaxyspace:spacemidplains": "PLAINS",
     "immersiveintelligence:wasteland": "SAVANNA",
     "minecraft:beaches": "SHORE",
     "minecraft:birch_forest": "BIRCH",
@@ -106,6 +112,7 @@
     "traverse:snowy_coniferous_forest": "PINES",
     "traverse:temperate_rainforest": "PINES",
     "traverse:thicket": "DENSE_FOREST",
-    "traverse:woodlands": "PLAINS"
+    "traverse:woodlands": "PLAINS",
+    "warpdrive:space": "PLAINS"
   }
 }
