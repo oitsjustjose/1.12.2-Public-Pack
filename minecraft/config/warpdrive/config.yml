@@ -138,13 +138,13 @@ client {
     B:breathing_overlay_forced=true
 
     # Hexadecimal color code for location background (0xAARRGGBB where AA is alpha, RR is Red, GG is Green and BB is Blue component)
-    S:location_background_color=0x40303030
+    S:location_background_color=0x00000000
 
     # Shadow casting option for current celestial object name
-    B:location_has_shadow=true
+    B:location_has_shadow=false
 
     # Prefix for location name, useful to add formatting
-    S:location_name_prefix=Â§l
+    S:location_name_prefix=
 
     # Horizontal offset on screen, increase to move to the right
     I:location_offset_x=0
@@ -156,13 +156,13 @@ client {
     D:location_scale=1.0
 
     # Alignment on screen: TOP_LEFT, TOP_CENTER, TOP_RIGHT, MIDDLE_LEFT, MIDDLE_CENTER, MIDDLE_RIGHT, BOTTOM_LEFT, BOTTOM_CENTER or BOTTOM_RIGHT
-    S:location_screen_alignment=MIDDLE_RIGHT
+    S:location_screen_alignment=TOP_LEFT
 
     # Text alignment: TOP_LEFT, TOP_CENTER, TOP_RIGHT, MIDDLE_LEFT, MIDDLE_CENTER, MIDDLE_RIGHT, BOTTOM_LEFT, BOTTOM_CENTER or BOTTOM_RIGHT
     S:location_text_alignment=TOP_RIGHT
 
     # Hexadecimal color code for location foreground (0xAARRGGBB where AA is alpha, RR is Red, GG is Green and BB is Blue component)
-    S:location_text_color=0xE6B4B4F0
+    S:location_text_color=0x00000000
 
     # Text width as a minimum 'pixel' count
     I:location_width_min=90
