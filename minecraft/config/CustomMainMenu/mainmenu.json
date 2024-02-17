@@ -44,7 +44,7 @@
       "hoverTextColor": 4428177,
       "action": {
         "type": "connectToServer",
-        "ip": "mc.oitsjustjose.com"
+        "ip": "forgeserv.net:25556"
       }
     },
 
