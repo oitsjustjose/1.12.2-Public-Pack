@@ -1,5 +1,28 @@
 # Server Pack v2 Changelog
 
+## v2.0.9:
+
+### Added:
+
+- Arcane Apprentices
+- CC: Tweaked
+- NotEnoughIds
+- WarpDrive
+
+### Removed:
+
+- Blur
+- Fullscreen Windowed
+- Immersive Combat
+
+### Updated:
+
+- EBW
+- Greenery
+- ImmersiveIntelligence
+- JEI
+- Wizardry Utils
+
 ## v2.0.8:
 
 ### Added:
